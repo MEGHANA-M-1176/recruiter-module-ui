@@ -1,0 +1,228 @@
+
+.referral-table-container {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.referral-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.referral-table th {
+  background: #f8fafc;
+  padding: 20px 24px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.referral-table td {
+  padding: 24px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  transition: var(--transition);
+}
+
+.ref-row {
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.ref-row:hover {
+  background: #fcfdfe;
+}
+
+.ref-row:hover td {
+  border-color: #e2e8f0;
+}
+
+.ref-row:last-child td {
+  border-bottom: none;
+}
+
+/* Campaign Identity */
+.camp-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.camp-name {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.camp-role {
+  font-size: 0.813rem;
+  color: var(--primary-accent);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.camp-role::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+/* Link Control */
+.link-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  width: fit-content;
+  max-width: 260px;
+  transition: var(--transition);
+}
+
+.link-ctrl:hover {
+  border-color: #cbd5e1;
+  background: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.ref-link-text {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.copy-btn {
+  background: white;
+  border: 1px solid var(--border);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.copy-btn:hover {
+  color: var(--primary-accent);
+  border-color: var(--primary-accent);
+  background: var(--primary-light);
+}
+
+.copy-btn.copied {
+  background: var(--success);
+  color: white;
+  border-color: var(--success);
+}
+
+/* Performance Stats */
+.perf-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.perf-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.perf-stat label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.perf-stat span {
+  font-size: 0.938rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.perf-stat.highlight span {
+  color: var(--success);
+}
+
+/* Actions */
+.ref-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.ref-btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.ref-btn-icon:hover {
+  background: #f1f5f9;
+  color: var(--text-main);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.ref-btn-icon.pause:hover { color: var(--warning); border-color: var(--warning); background-color: #fffbeb; }
+.ref-btn-icon.play:hover { color: var(--success); border-color: var(--success); background-color: #f0fdf4; }
+
+.status-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notif-status {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.notif-status::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.date-col {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}

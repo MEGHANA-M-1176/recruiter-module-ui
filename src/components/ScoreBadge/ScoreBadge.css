@@ -1,0 +1,26 @@
+
+.score-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.score-high {
+  background-color: var(--success-light);
+  color: var(--success);
+}
+
+.score-medium {
+  background-color: var(--warning-light);
+  color: var(--warning);
+}
+
+.score-low {
+  background-color: var(--danger-light);
+  color: var(--danger);
+}

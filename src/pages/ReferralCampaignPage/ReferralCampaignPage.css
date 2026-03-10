@@ -1,0 +1,116 @@
+
+.referral-page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.referral-page-header {
+  margin-bottom: 56px;
+}
+
+.header-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.ref-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--primary-accent);
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+  background-color: var(--primary-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  width: fit-content;
+}
+
+.ref-title-group h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--primary);
+  margin: 0 0 16px 0;
+  line-height: 1;
+}
+
+.ref-subtitle {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  max-width: 650px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.btn-launch-campaign {
+  background: var(--primary-accent);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
+  transition: var(--transition);
+}
+
+.btn-launch-campaign:hover {
+  transform: translateY(-2px);
+  background: var(--primary-hover);
+  box-shadow: 0 15px 25px -5px rgba(37, 99, 235, 0.4);
+}
+
+.btn-launch-campaign:active {
+  transform: translateY(0);
+}
+
+.referral-page-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.skeleton-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mb-4 { margin-bottom: 32px; }
+.mb-2 { margin-bottom: 12px; }
+
+@media (max-width: 1200px) {
+  .header-top-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .ref-title-group h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .referral-page-wrapper {
+    padding: 32px 20px;
+  }
+}

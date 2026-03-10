@@ -1,0 +1,108 @@
+
+.referral-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background: white;
+  padding: 24px 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.r-search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 360px;
+}
+
+.r-search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.r-search-input {
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.938rem;
+  font-weight: 500;
+  transition: var(--transition);
+  color: var(--text-main);
+}
+
+.r-search-input:focus {
+  outline: none;
+  background: white;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.r-search-input::placeholder {
+  color: #94a3b8;
+}
+
+.r-filters-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-item label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.r-select {
+  padding: 12px 14px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  min-width: 160px;
+  transition: var(--transition);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 40px;
+}
+
+.r-select:hover {
+  border-color: #cbd5e1;
+}
+
+.r-select:focus {
+  outline: none;
+  border-color: var(--primary-accent);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+}
+
+.r-sort-select {
+  background-color: #f1f5f9;
+  border-color: transparent;
+}
+
+.r-sort-select:hover {
+  background-color: #e2e8f0;
+}

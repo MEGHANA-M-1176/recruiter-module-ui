@@ -1,0 +1,31 @@
+
+.stats-card {
+  background: var(--bg-card);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--border);
+  flex: 1;
+  min-width: 200px;
+}
+
+.stats-title {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.stats-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.stats-card.flagged { border-left-color: var(--text-muted); }
+.stats-card.review { border-left-color: var(--warning); }
+.stats-card.approved { border-left-color: var(--success); }
+.stats-card.rejected { border-left-color: var(--danger); }
