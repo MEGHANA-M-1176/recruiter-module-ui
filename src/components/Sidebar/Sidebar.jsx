@@ -31,6 +31,12 @@ const Sidebar = ({ activePage, onPageChange }) => {
             </svg>
             Referral Campaigns
           </a>
+          <a href="#" className={`nav-item ${activePage === 'brandkit' ? 'active' : ''}`} onClick={() => onPageChange('brandkit')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            Brand Kit Studio
+          </a>
           <a href="#" className={`nav-item ${activePage === 'candidates' ? 'active' : ''}`} onClick={() => onPageChange('candidates')}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
