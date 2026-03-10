@@ -37,6 +37,13 @@ const Sidebar = ({ activePage, onPageChange }) => {
             </svg>
             Brand Kit Studio
           </a>
+          <a href="#" className={`nav-item ${activePage === 'compliance' ? 'active' : ''}`} onClick={() => onPageChange('compliance')}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M12 8v4M12 16h.01" />
+            </svg>
+            JD Compliance Studio
+          </a>
           <a href="#" className={`nav-item ${activePage === 'candidates' ? 'active' : ''}`} onClick={() => onPageChange('candidates')}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
