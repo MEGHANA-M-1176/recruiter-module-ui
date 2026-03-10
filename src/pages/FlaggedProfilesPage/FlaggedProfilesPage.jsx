@@ -4,6 +4,7 @@ import StatsCard from '../../components/StatsCard/StatsCard';
 import FilterToolbar from '../../components/FilterToolbar/FilterToolbar';
 import FlaggedProfilesTable from '../../components/FlaggedProfilesTable/FlaggedProfilesTable';
 import ProfileReviewDrawer from '../../components/ProfileReviewDrawer/ProfileReviewDrawer';
+import WorkflowMetadataPanel from '../../components/WorkflowMetadataPanel/WorkflowMetadataPanel';
 import { MOCK_FLAGGED_PROFILES, MOCK_STATS } from '../../mock/data';
 import './FlaggedProfilesPage.css';
 
@@ -105,6 +106,13 @@ const FlaggedProfilesPage = () => {
           onViewDetails={handleViewDetails}
           onApprove={handleApprove}
           onReject={handleReject}
+        />
+
+        <WorkflowMetadataPanel 
+          dataInputs={['Flagged profiles', 'Authenticity score', 'Risk level', 'Candidate details']}
+          dataOutputs={['Validation decision', 'Approve / Reject result', 'Spam filtering status']}
+          preConditions={['Bot flags raised', 'Candidate applied']}
+          postConditions={['Spam filtered out', 'Candidate status updated']}
         />
       </main>
 

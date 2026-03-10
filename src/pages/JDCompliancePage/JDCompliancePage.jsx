@@ -4,6 +4,7 @@ import JDComplianceForm from '../../components/JDComplianceForm/JDComplianceForm
 import JDValidationSummary from '../../components/JDValidationSummary/JDValidationSummary';
 import JDValidationResults from '../../components/JDValidationResults/JDValidationResults';
 import JDEmptyState from '../../components/JDEmptyState/JDEmptyState';
+import WorkflowMetadataPanel from '../../components/WorkflowMetadataPanel/WorkflowMetadataPanel';
 import { JD_COMPLIANCE_STATS, MOCK_VALIDATION_RESULT } from '../../mock/jdComplianceData';
 import './JDCompliancePage.css';
 
@@ -98,6 +99,13 @@ const JDCompliancePage = () => {
           <JDValidationResults result={validationResult} />
         </div>
       )}
+
+      <WorkflowMetadataPanel 
+        dataInputs={['JD text', 'Job title', 'Department', 'Location', 'Employment type']}
+        dataOutputs={['Bias flags', 'Compliance status', 'Inclusive language suggestions', 'Validation result']}
+        preConditions={['JD created', 'Hiring manager logged in']}
+        postConditions={['JD compliance verified', 'JD ready for publishing']}
+      />
     </div>
   );
 };

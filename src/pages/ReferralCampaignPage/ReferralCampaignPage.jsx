@@ -6,6 +6,7 @@ import ReferralCampaignDrawer from '../../components/ReferralCampaignDrawer/Refe
 import CreateReferralCampaignModal from '../../components/CreateReferralCampaignModal/CreateReferralCampaignModal';
 import EmptyState from '../../components/EmptyState/EmptyState';
 import Skeleton from '../../components/Skeleton/Skeleton';
+import WorkflowMetadataPanel from '../../components/WorkflowMetadataPanel/WorkflowMetadataPanel';
 import { REFERRAL_CAMPAIGNS, REFERRAL_STATS_DATA } from '../../mock/referralData';
 import './ReferralCampaignPage.css';
 
@@ -140,6 +141,13 @@ const ReferralCampaignPage = () => {
             }}
           />
         )}
+
+        <WorkflowMetadataPanel 
+          dataInputs={['Employee list', 'Referral links', 'Campaign role', 'Target audience']}
+          dataOutputs={['Generated referral links', 'Notifications sent', 'Referral campaign metrics']}
+          preConditions={['Referral campaign approved', 'Recruiter logged in']}
+          postConditions={['Referral program activated', 'Outreach notifications delivered']}
+        />
       </main>
 
       <ReferralCampaignDrawer 

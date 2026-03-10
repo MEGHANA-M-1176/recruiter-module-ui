@@ -4,6 +4,7 @@ import BrandKitStats from '../../components/BrandKitStats/BrandKitStats';
 import BrandKitForm from '../../components/BrandKitForm/BrandKitForm';
 import BrandKitOutput from '../../components/BrandKitOutput/BrandKitOutput';
 import BrandKitEmptyState from '../../components/BrandKitEmptyState/BrandKitEmptyState';
+import WorkflowMetadataPanel from '../../components/WorkflowMetadataPanel/WorkflowMetadataPanel';
 import { BRAND_KIT_STATS, MOCK_GENERATED_KIT } from '../../mock/brandKitData';
 import './BrandKitPage.css';
 
@@ -86,6 +87,13 @@ const BrandKitPage = () => {
           </div>
         </div>
       </main>
+
+      <WorkflowMetadataPanel 
+        dataInputs={['Job role', 'Department', 'Experience level', 'Work mode', 'Role summary']}
+        dataOutputs={['Enhanced role summary', 'EVP messaging', 'Candidate pitch', 'Outreach copy']}
+        preConditions={['JD approved', 'Brand assets available']}
+        postConditions={['Brand kit generated', 'Brand-enhanced JD ready']}
+      />
     </div>
   );
 };
