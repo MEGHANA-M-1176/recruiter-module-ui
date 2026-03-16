@@ -1,0 +1,377 @@
+.wfm-check-page {
+  padding: 32px 40px;
+  max-width: 1200px; /* Compact page */
+  margin: 0 auto;
+}
+
+.wfm-header {
+  margin-bottom: 32px;
+}
+
+.wfm-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.wfm-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.wfm-subtitle {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+.wfm-content-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 24px;
+}
+
+.wfm-panel {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Left Form Panel */
+.wfm-form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #0f172a;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #3b82f6;
+  background: white;
+}
+
+.input-hint {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-wfm-outline {
+  flex: 1;
+  padding: 10px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-wfm-outline:hover:not(:disabled) {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.btn-wfm-primary {
+  flex: 2;
+  padding: 10px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-wfm-primary:hover:not(:disabled) {
+  background: #334155;
+}
+
+.btn-wfm-outline:disabled,
+.btn-wfm-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Right Result Panel */
+.result-content-area {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wfm-empty-state,
+.wfm-loading-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #64748b;
+  min-height: 400px;
+}
+
+.w-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.w-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f1f5f9;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 24px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.wfm-empty-state h4,
+.wfm-loading-state h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.wfm-empty-state p,
+.wfm-loading-state p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Result Data view */
+.wfm-result-data {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.result-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border-left: 4px solid transparent;
+}
+
+.result-hero.approved {
+  background: #f0fdf4;
+  border-left-color: #10b981;
+}
+
+.result-hero.flagged {
+  background: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.rh-icon {
+  font-size: 24px;
+}
+
+.rh-text h4 {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.rh-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f1f5f9;
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.d-label {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.d-value {
+  font-size: 15px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.d-value.hl-bold {
+  font-size: 20px;
+  font-weight: 700;
+  color: #10b981; /* Default to green, logic handles fail */
+}
+
+.d-value.approved { color: #10b981; font-weight: 700;}
+.d-value.flagged { color: #ef4444; font-weight: 700; }
+
+.decision-actions {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.da-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.da-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-decision {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-decision::after {
+  content: "→";
+}
+
+.btn-decision.primary {
+  background: #10b981;
+  color: white;
+  border: none;
+}
+
+.btn-decision.primary:hover:not(.disabled) {
+  background: #059669;
+}
+
+.btn-decision.primary.disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.btn-decision.primary.disabled::after {
+  content: "🔒";
+}
+
+.btn-decision.secondary {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+}
+
+.btn-decision.secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.btn-decision.danger {
+  background: white;
+  border: 1px solid #fecaca;
+  color: #ef4444;
+}
+
+.btn-decision.danger:hover {
+  background: #fef2f2;
+}
+
+.wfm-timestamp {
+  text-align: right;
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+}

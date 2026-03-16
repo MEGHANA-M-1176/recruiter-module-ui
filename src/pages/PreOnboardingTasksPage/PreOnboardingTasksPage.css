@@ -1,0 +1,250 @@
+.pot-page {
+  padding: 32px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.pot-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pot-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.pot-subtitle {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+.btn-pot-primary {
+  padding: 10px 20px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-pot-primary:hover {
+  background: #334155;
+}
+
+/* Candidate Summary */
+.pot-candidate-summary {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.pcs-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pcs-avatar {
+  width: 48px;
+  height: 48px;
+  background: #f1f5f9;
+  color: #0f172a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pcs-info h2 { margin: 0; font-size: 18px; color: #0f172a; }
+.pcs-info p { margin: 4px 0 0 0; font-size: 13px; color: #64748b; }
+
+.pcs-status {
+  display: flex;
+  gap: 12px;
+}
+
+.pcs-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pcs-progress {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Tasks Grid */
+.pot-tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.task-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.tc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tc-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tc-category.workspace { background: #fee2e2; color: #991b1b; }
+.tc-category.it { background: #e0f2fe; color: #0369a1; }
+.tc-category.culture { background: #fef9c3; color: #854d0e; }
+.tc-category.logistics { background: #f3e8ff; color: #6b21a8; }
+
+.tc-due {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.tc-body {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.tc-body h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.tc-owner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tc-owner img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.tc-owner span {
+  font-size: 13px;
+  color: #475569;
+}
+
+.tc-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tc-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.task-card.completed .status-label { color: #10b981; }
+.task-card.in-progress .status-label { color: #3b82f6; }
+
+.btn-toggle {
+  background: none;
+  border: 1px solid #cbd5e1;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #475569;
+}
+
+.btn-toggle:hover {
+  background: #f8fafc;
+}
+
+.btn-notify {
+  background: #f1f5f9;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+}
+
+.btn-notify:hover {
+  background: #e2e8f0;
+}
+
+.task-card.completed {
+  border-left: 4px solid #10b981;
+}
+
+.task-card.in-progress {
+  border-left: 4px solid #3b82f6;
+}
+
+.task-card.pending {
+  border-left: 4px solid #cbd5e1;
+}

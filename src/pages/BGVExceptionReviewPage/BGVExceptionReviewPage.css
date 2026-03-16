@@ -1,0 +1,310 @@
+.bgv-review-page {
+  padding: 32px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.bgv-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.bgv-review-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 8px 0;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 15px;
+  margin: 0;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bgv-review-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 24px;
+}
+
+.review-panel {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.case-id {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Candidate Summary */
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+.profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profile-details h2 { margin: 0 0 4px 0; font-size: 20px; }
+.profile-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #64748b; }
+.profile-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: #cbd5e1; }
+
+.risk-indicator {
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.ri-label { font-size: 11px; font-weight: 600; color: #64748b; text-transform: uppercase; }
+.ri-value { font-size: 16px; font-weight: 700; }
+.ri-value.yellow { color: #d97706; }
+
+/* Exceptions Section */
+.exceptions-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.exceptions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exception-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+  border-left: 4px solid #cbd5e1;
+}
+
+.exception-card.sev-medium { border-left-color: #f59e0b; }
+.exception-card.sev-low { border-left-color: #3b82f6; }
+
+.ex-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.category-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.flag-code {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.severity-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.severity-pill.medium { background: #fff7ed; color: #9a3412; }
+.severity-pill.low { background: #eff6ff; color: #1e40af; }
+
+.ex-body h4 {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ex-body p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.ex-footer {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Decision Panel */
+.decision-body {
+  padding: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  resize: none;
+  font-size: 14px;
+  margin-bottom: 24px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.decision-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-decision {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-accept { background: #10b981; color: white; }
+.btn-accept:hover { background: #059669; }
+
+.btn-candidate { background: white; border: 1px solid #cbd5e1; color: #475569; }
+.btn-candidate:hover { background: #f8fafc; }
+
+.btn-escalate { background: #0f172a; color: white; }
+.btn-escalate:hover { background: #334155; }
+
+/* Decision Result */
+.decision-result {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.state-accepted { background: #f0fdf4; border: 1px solid #dcfce7; }
+.state-escalated { background: #f8fafc; border: 1px solid #e2e8f0; }
+.state-send { background: #fffbeb; border: 1px solid #fef3c7; }
+
+.dr-icon { font-size: 32px; }
+.dr-text strong { display: block; font-size: 15px; margin-bottom: 4px; }
+.dr-text span { font-size: 12px; color: #64748b; line-height: 1.4; }
+
+.btn-undo {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.policy-reminder {
+  background: #fdf2f8;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #fce7f3;
+}
+
+.policy-reminder h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #9d174d;
+}
+
+.policy-reminder p {
+  font-size: 12px;
+  color: #be185d;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.policy-reminder p:last-child { margin-bottom: 0; }
